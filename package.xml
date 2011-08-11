@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.3" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Akna</name>
+ <channel>pear.w3p.com.br</channel>
+ <summary>PHP client library to Akna webservices.</summary>
+ <description>PHP client library to Akna webservices.</description>
+ <lead>
+  <name>Pedro Padron</name>
+  <user>ppadron</user>
+  <email>ppadron@w3p.com.br</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-08-11</date>
+ <time>03:42:57</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Style</license>
+ <notes>
+- first release
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="a0aeee936c12db33045b202a72e6d1fe" name="Akna/Client.php" role="php" />
+   <file baseinstalldir="/" md5sum="04ca2bb21641b49196ddc27ad78b2771" name="Akna/Container.php" role="php" />
+   <file baseinstalldir="/" md5sum="ca318cddced2d96af2e599cd3c78bf24" name="Akna/EmailMarketing.php" role="php" />
+   <file baseinstalldir="/" md5sum="8c7b7cd8861ffbdab8d650edd660961a" name="Akna/Exception.php" role="php" />
+   <file baseinstalldir="/" md5sum="1ead22660bd731e12e8cc8fc8981b797" name="Akna/HttpClient.php" role="php" />
+   <file baseinstalldir="/" md5sum="434de140e79be0e5619296d495a6b2c2" name="Akna/EmailMarketing/Contacts.php" role="php" />
+   <file baseinstalldir="/" md5sum="f8e95114be8dd6640996cff2a3c2259d" name="Akna.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2011-08-11</date>
+   <license uri="http://www.opensource.org/licenses/bsd-license.php">BSD Style</license>
+   <notes>
+- first release
+   </notes>
+  </release>
+ </changelog>
+</package>

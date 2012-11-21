@@ -29,13 +29,13 @@ class Akna_EmailMarketing_Contacts extends Akna_Client
     /**
      * Adds a contact with optional additional fields to a specific list.
      *
-     * @param string $list   List name. Will be created if does not exist.
      * @param string $email  Email address.
+     * @param string $list   List name. Will be created if does not exist.
      * @param array  $fields Additional fields.
      *
      * @return boolean
      */
-    public function add($list, $email, array $fields = array())
+    public function add($email, $list, array $fields = array())
     {
         $fields = array(
             'nome'         => $list,
@@ -56,7 +56,7 @@ class Akna_EmailMarketing_Contacts extends Akna_Client
      *
      * @return array
      */
-    public function get($list, $email)
+    public function get($email, $list)
     {
         $fields = array(
             'lista' => $list, 'contato' => $email

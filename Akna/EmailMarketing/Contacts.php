@@ -63,7 +63,24 @@ class Akna_EmailMarketing_Contacts extends Akna_Client
         );
 
         $result = $this->getHttpClient()->send('11.01', 'emkt', $fields);
+        var_dump($result);
 
         return array_change_key_case((array) $result->EMKT->CONTATO, CASE_LOWER);
+    }
+
+    /**
+     * Returns the contact lists
+     * 
+     * @return array
+     */
+    public function getLists()
+    {
+        $result  = $this->getHttpClient()->send( '11.02', 'emkt' );
+        $arrList = array();
+
+        foreach( $result->EMKT->LISTA as $list )
+            $arrList[] = $list;
+            
+        return $arrList;
     }
 }

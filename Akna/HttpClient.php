@@ -83,14 +83,20 @@ class Akna_HttpClient
      *
      * @return void
      */
-    protected function addParametersToXml($xmldoc, array $params)
+    protected function addParametersToXml( $xmldoc, array $params )
     {
-        foreach ($params as $key => $value) {
-            if (is_array($value)) {
-                $child = $xmldoc->addChild($key);
-                $this->addParametersToXml($child, $value);
+        foreach ( $params as $key => $value ) {
+            if ( is_array( $value ) ) {
+                if( isset( $value[0] ) ) {
+                    foreach( $value as $_value ) {
+                        $child = $xmldoc->addChild( $key, $_value );
+                    }
+                } else {
+                    $child = $xmldoc->addChild( $key );
+                    $this->addParametersToXml( $child, $value );
+                }
             } else {
-                $xmldoc->addChild($key, utf8_encode($value));
+                $xmldoc->addChild( $key, utf8_encode( $value ) );
             }
         }
     }
@@ -122,15 +128,20 @@ class Akna_HttpClient
     public function send($functionCode, $module, $params = array())
     {
         $content = new SimpleXmlElement(
-            "<main><$module trans=\"{$functionCode}\"></$module></main>"
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?><main><$module trans=\"{$functionCode}\"></$module></main>"
         );
 
-        $this->addParametersToXml($content->$module, $params);
+        $this->addParametersToXml( $content->$module, $params );
+
+        $xml = utf8_decode( $content->asXML() );
+
+        // var_dump($xml);
+        // exit;
 
         $postFields = array(
             'User' => $this->username,
             'Pass' => md5($this->password),
-            'XML'  => $content->asXml()
+            'XML'  => $xml
         );
 
         if (isset($this->company) && !empty($this->company)) {
@@ -152,7 +163,7 @@ class Akna_HttpClient
         );
 
         $responseBody = file_get_contents($this->endpoint, null, $context);
-
+        
         // the webservice will always return 200 OK, but maybe the user
         // specified the wrong api endpoint, so let's take a look at the http
         // response code

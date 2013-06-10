@@ -30,5 +30,5 @@ class Akna_EmailMarketing extends Akna_Container
     /**
      * @var array List of elements accessible by this class.
      */
-    protected $resources = array('contacts');
+    protected $resources = array( 'contacts', 'messages', 'campaigns' );
 }

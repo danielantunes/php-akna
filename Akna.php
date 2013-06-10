@@ -30,5 +30,5 @@ class Akna extends Akna_Container
     /**
      * @var array List of elements accessible by this class.
      */
-    protected $resources = array('emailMarketing');
+    protected $resources = array( 'emailMarketing' );
 }

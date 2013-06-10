@@ -63,7 +63,6 @@ class Akna_EmailMarketing_Contacts extends Akna_Client
         );
 
         $result = $this->getHttpClient()->send('11.01', 'emkt', $fields);
-        var_dump($result);
 
         return array_change_key_case((array) $result->EMKT->CONTATO, CASE_LOWER);
     }

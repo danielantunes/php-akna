@@ -135,9 +135,6 @@ class Akna_HttpClient
 
         $xml = utf8_decode( $content->asXML() );
 
-        // var_dump($xml);
-        // exit;
-
         $postFields = array(
             'User' => $this->username,
             'Pass' => md5($this->password),

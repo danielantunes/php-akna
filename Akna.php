@@ -1,15 +1,15 @@
 <?php
 /**
- * Akna.php
- *
- * PHP version 5
+ * Akna
  *
  * @category Akna
  * @package  Akna
  * @author   Pedro Padron <ppadron@w3p.com.br>
+ * @author 
  * @license  BSD <http://www.opensource.org/licenses/bsd-license.php>
- * @link     http://github.com/w3p/akna-client-php
+ * @link     https://github.com/w3p/php-akna
  * @see      http://www.akna.com.br/
+ * @version  0.2
  */
 
 require_once 'Akna/Container.php';
@@ -21,8 +21,9 @@ require_once 'Akna/Container.php';
  * @package  Akna
  * @author   Pedro Padron <ppadron@w3p.com.br>
  * @license  BSD <http://www.opensource.org/licenses/bsd-license.php>
- * @link     http://github.com/w3p/akna-client-php
- *
+ * @link     https://github.com/w3p/php-akna
+ * @version  0.1
+ * 
  * @property Akna_EmailMarketing $emailMarketing
  */
 class Akna extends Akna_Container

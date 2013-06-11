@@ -1,17 +1,4 @@
 <?php
-/**
- * Client.php
- *
- * PHP version 5
- *
- * @category Akna
- * @package  Akna_EmailMarketing
- * @author   Pedro Padron <ppadron@w3p.com.br>
- * @license  BSD <http://www.opensource.org/licenses/bsd-license.php>
- * @link     http://github.com/w3p/akna-client-php
- * @see      http://www.akna.com.br/
- */
-
 require_once 'Akna/HttpClient.php';
 
 /**
@@ -21,7 +8,8 @@ require_once 'Akna/HttpClient.php';
  * @package  Akna_EmailMarketing
  * @author   Pedro Padron <ppadron@w3p.com.br>
  * @license  BSD <http://www.opensource.org/licenses/bsd-license.php>
- * @link     http://github.com/w3p/akna-client-php
+ * @link     https://github.com/w3p/php-akna
+ * @version  0.1
  */
 class Akna_Client
 {
@@ -48,6 +36,8 @@ class Akna_Client
     /**
      * Class constructor.
      *
+     * @since 0.1
+     * 
      * @param string $username API username
      * @param string $password API password
      * @param string $company  Company ID (if user is in more than one company)
@@ -67,6 +57,8 @@ class Akna_Client
     /**
      * Sets the HTTP client.
      *
+     * @since 0.1
+     * 
      * @param Akna_HttpClient $httpClient HTTP client.
      *
      * @return void
@@ -79,6 +71,8 @@ class Akna_Client
     /**
      * Returns the HTTP client.
      *
+     * @since 0.1
+     * 
      * @return Akna_HttpClient
      */
     public function getHttpClient()

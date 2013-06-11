@@ -1,17 +1,4 @@
 <?php 
-/**
- * Messages.php
- *
- * PHP version 5
- *
- * @category Akna
- * @package  Akna_EmailMarketing
- * @author   Daniel Antunes <daniel.antunes.rocha@gmail.com>
- * @license  BSD <http://www.opensource.org/licenses/bsd-license.php>
- * @link     http://github.com/w3p/akna-client-php
- * @see      http://www.akna.com.br/
- */
-
 require_once 'Akna/Client.php';
 
 /**
@@ -21,12 +8,15 @@ require_once 'Akna/Client.php';
  * @package  Akna_EmailMarketing
  * @author   Daniel Antunes <daniel.antunes.rocha@gmail.com>
  * @license  BSD <http://www.opensource.org/licenses/bsd-license.php>
- * @link     http://github.com/w3p/akna-client-php
+ * @link     http://github.com/w3p/php-akna
+ * @version  0.2
  */
 class Akna_EmailMarketing_Messages extends Akna_Client
 {
     /**
      * Creates a message
+     * 
+     * @since 0.2
      * 
      * @param array $fields The fields nome and html are required
      * @return boolean
@@ -47,6 +37,8 @@ class Akna_EmailMarketing_Messages extends Akna_Client
 
     /**
      * Sends a test e-mail from message
+     * 
+     * @since 0.2
      * 
      * @param array $fields The fields titulo, email_remetente, assunto and email are required
      * @return boolean

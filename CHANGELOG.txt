@@ -1,0 +1,9 @@
+Versão: 0.2 - 10 de Junho de 2013
+
+- Implementação do módulo de campanhas
+- Implementação do módulo de mensagens
+- Implementação do método de retorno das listas de contatos
+
+Versão: 0.1 - 11 de Agosto de 2011
+
+- Lançamento

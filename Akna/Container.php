@@ -1,17 +1,4 @@
 <?php
-/**
- * Container.php
- *
- * PHP version 5
- *
- * @category Akna
- * @package  Akna
- * @author   Pedro Padron <ppadron@w3p.com.br>
- * @license  BSD <http://www.opensource.org/licenses/bsd-license.php>
- * @link     http://github.com/w3p/akna-client-php
- * @see      http://www.akna.com.br/
- */
-
 require_once 'Akna/Client.php';
 
 /**
@@ -27,7 +14,8 @@ require_once 'Akna/Client.php';
  * @package  Akna
  * @author   Pedro Padron <ppadron@w3p.com.br>
  * @license  BSD <http://www.opensource.org/licenses/bsd-license.php>
- * @link     http://github.com/w3p/akna-client-php
+ * @link     http://github.com/w3p/php-akna
+ * @version  0.1
  */
 class Akna_Container extends Akna_Client
 {
@@ -44,6 +32,8 @@ class Akna_Container extends Akna_Client
     /**
      * Allows lazy-loading resources.
      *
+     * @since 0.1
+     * 
      * @param string $name Resource name
      *
      * @return mixed Resource instance

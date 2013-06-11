@@ -1,17 +1,4 @@
 <?php
-/**
- * Client.php
- *
- * PHP version 5
- *
- * @category Akna
- * @package  Akna
- * @author   Pedro Padron <ppadron@w3p.com.br>
- * @license  BSD <http://www.opensource.org/licenses/bsd-license.php>
- * @link     http://github.com/w3p/akna-client-php
- * @see      http://www.akna.com.br/
- */
-
 require_once 'Akna/Exception.php';
 
 /**
@@ -31,8 +18,9 @@ require_once 'Akna/Exception.php';
  * @package  Akna
  * @author   Pedro Padron <ppadron@w3p.com.br>
  * @license  BSD <http://www.opensource.org/licenses/bsd-license.php>
- * @link     http://github.com/w3p/akna-client-php
+ * @link     http://github.com/w3p/php-akna
  * @see      http://www.akna.com.br/
+ * @version  0.1
  */
 class Akna_HttpClient
 {
@@ -59,6 +47,8 @@ class Akna_HttpClient
     /**
      * Class constructor.
      *
+     * @since 0.1
+     * 
      * @param string $username API username
      * @param string $password API password
      * @param string $company  Company ID (if user is in more than one company)
@@ -78,6 +68,7 @@ class Akna_HttpClient
     /**
      * Adds an array of parameters as children of a SimpleXmlElement.
      *
+     * @since 0.1
      * @param SimpleXmlElement $xmldoc Root XML element
      * @param array            $params Associative array of parameters
      *
@@ -104,6 +95,8 @@ class Akna_HttpClient
     /**
      * Sends the request and returns the result as SimpleXmlElement.
      *
+     * @since 0.1
+     * 
      * @param string $functionCode API function code.
      *
      * Each API function is identified by a specific code, such as "11.05" to

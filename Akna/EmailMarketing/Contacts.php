@@ -1,19 +1,5 @@
 <?php
-/**
- * Contacts.php
- *
- * PHP version 5
- *
- * @category Akna
- * @package  Akna_EmailMarketing
- * @author   Pedro Padron <ppadron@w3p.com.br>
- * @license  BSD <http://www.opensource.org/licenses/bsd-license.php>
- * @link     http://github.com/w3p/akna-client-php
- * @see      http://www.akna.com.br/
- */
-
 require_once 'Akna/Client.php';
-
 
 /**
  * This class allows interaction with contact lists.
@@ -22,13 +8,16 @@ require_once 'Akna/Client.php';
  * @package  Akna_EmailMarketing
  * @author   Pedro Padron <ppadron@w3p.com.br>
  * @license  BSD <http://www.opensource.org/licenses/bsd-license.php>
- * @link     http://github.com/w3p/akna-client-php
+ * @link     http://github.com/w3p/php-akna
+ * @since    0.1
  */
 class Akna_EmailMarketing_Contacts extends Akna_Client
 {
     /**
      * Adds a contact with optional additional fields to a specific list.
      *
+     * @since 0.1
+     * 
      * @param string $email  Email address.
      * @param string $list   List name. Will be created if does not exist.
      * @param array  $fields Additional fields.
@@ -50,7 +39,9 @@ class Akna_EmailMarketing_Contacts extends Akna_Client
 
     /**
      * Returns a contact in a given list.
-     *
+     * 
+     * @since 0.1
+     * 
      * @param string $list  List name.
      * @param string $email Email address.
      *
@@ -70,7 +61,8 @@ class Akna_EmailMarketing_Contacts extends Akna_Client
     /**
      * Returns the contact lists
      * 
-     * @return array
+     * @since 0.2
+     * @return array Contact lists
      */
     public function getLists()
     {

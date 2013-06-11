@@ -1,17 +1,4 @@
 <?php
-/**
- * EmailMarketing.php
- *
- * PHP version 5
- *
- * @category Akna
- * @package  Akna_EmailMarketing
- * @author   Pedro Padron <ppadron@w3p.com.br>
- * @license  BSD <http://www.opensource.org/licenses/bsd-license.php>
- * @link     http://github.com/w3p/akna-client-php
- * @see      http://www.akna.com.br/
- */
-
 require_once 'Akna/Container.php';
 
 /**
@@ -20,10 +7,14 @@ require_once 'Akna/Container.php';
  * @category Akna
  * @package  Akna_EmailMarketing
  * @author   Pedro Padron <ppadron@w3p.com.br>
+ * @author 	 Daniel Antunes <daniel.antunes.rocha@gmail.com>
  * @license  BSD <http://www.opensource.org/licenses/bsd-license.php>
- * @link     http://github.com/w3p/akna-client-php
+ * @link     http://github.com/w3p/php-akna
+ * @version  0.1
  *
+ * @property Akna_EmailMarketing_Campaigns $campaigns Campaigns API client.
  * @property Akna_EmailMarketing_Contacts $contacts Contacts API client.
+ * @property Akna_EmailMarketing_Messages $messages Messages API client.
  */
 class Akna_EmailMarketing extends Akna_Container
 {

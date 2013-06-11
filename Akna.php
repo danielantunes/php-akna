@@ -1,6 +1,6 @@
 <?php
 /**
- * Akna
+ * Akna Client Library
  *
  * @category Akna
  * @package  Akna

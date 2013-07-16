@@ -3,8 +3,8 @@ header('Content-Type: text/html; charset=utf-8');
 
 require_once 'Akna.php';
 
-$user    = 'diego.puerta@firb.com';
-$pass    = 'firb375';
+$user    = '';
+$pass    = '';
 
 $akna = new Akna( $user, $pass );
 
